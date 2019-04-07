@@ -1,0 +1,8 @@
+<programa> ::= <comandos>
+<comandos> ::= "(" <comando> ")" | "(" <comando> ")" <comandos>
+<comando> ::=  <atribuicao> | <declaracao>
+<atribuicao> ::= "=" <id> <valor>
+<declaracao> ::= <tipo> <id>
+<id> ::= ^[a-zA-Z]([a-zA-Z]|[0-9])*
+<tipo> ::= "int"
+<valor> ::= [0-9]

@@ -1,0 +1,8 @@
+( fun soma ( int a ) ( int b ) : int
+ ( int aux )
+ ( = aux ( + a ( sub a b ) ) )
+ ( retorna aux )
+)
+( texto s1 )
+( = s1 ( . "soma=" ( soma 3 4 ) ) )
+( mostra s1 )
